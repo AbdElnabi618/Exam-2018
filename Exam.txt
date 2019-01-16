@@ -1,0 +1,107 @@
+Q1:															(1)
+1)In case radio Button 1 is checking the background of the form  will change to red color 
+	and in case radio button is checking the background of the form  will change to blue color 
+	in otherwise the back ground will be green.
+ 
+2)array2 will be equal to {5,4,3,2,1}
+ 
+3)in first loop the program will print the exist value of the 'i' and 'sum' which will be like "i=1,sum=1"
+	then the program will increase the 'i' value in every once by 2*value - i*2 - 
+	then add the new value of 'i' to the exist value of 'sum' to by like "sum = sum + i"
+	then checking if "i <= 128 " in case true (it will go into for body again and print the new value of "i and sum "
+	and loop to when the condition be false )in case  false (the program will end).
+	
+4)the program will add all value of 'prices' array to 'total' variable and after add all value in 'prices' to 'total' 
+		and let the 'total' equal to  '55.6' the program will go and print the value of 'total' in a message box with 
+		description like "The total amount is:55.6".
+	
+   															(2)
+1)TextBox textBoxArray = new TextBox[5];
+
+2)bool xIsOdd = x%2==0 ? false :true ; 
+
+3)listbox1.Items.Clear;
+
+4)listbox1.Items.AddRange(s_names);
+
+Q2:															(1)
+	for(int i =1 ; i<=5;i++)
+	{
+		for(int j =1 ; j<= i ; j++)
+			{
+				label1.Text += j.ToString()+ " ";			
+			}
+			label1.Text += "\n";
+	}
+	
+															(2)
+			int[,] array = new int[10,12];
+
+            for (int i = 0; i < 10; i++ )
+            {
+                for (int j = 0; j < 12; j++)
+                {
+                    array[i, j] = int.Parse(Interaction.InputBox("Enter the salayry of employe nuber" + (i + 1) + "in the" + (j + 1) + "month"
+                        , "Title", "1", 0, 0));
+                }
+            }
+            int sum =0;
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 12; j++)
+                {
+                    sum += array[i,j];
+                }                
+            }
+
+            label1.Text = (sum / (10*12)).ToString();
+			
+			
+															(3)
+	double power(int x , int y)
+	{
+		return Math.Pow(x,y);
+	}
+	
+	#other Answer
+
+	long power(int x , int y)
+	{
+		long pow = 1;
+		for(int i = 1 ; i<=y ; i++)
+		{
+			pow *= x;
+		}
+		return pow;
+	}
+
+
+Q3: 																	(1)
+
+1) 
+	 int x = int.Parse(textBox1.Text);
+     int y = int.Parse(textBox2.Text);
+	 label1.Text = (x + y).ToString();
+
+
+2)
+//method used to move items
+ private void MoveListBoxItems(ListBox source, ListBox destination)
+        {
+            
+            foreach (var item in source.Items)
+            {
+                destination.Items.Add(item);
+            }
+            
+        }
+//on button 2 clicked
+        button2_Click
+        {
+            MoveListBoxItems(listBox1, listBox2);
+        }
+//on button 1 clicked
+        button1_Click_1
+        {
+            MoveListBoxItems(listBox2, listBox1);
+        }	
