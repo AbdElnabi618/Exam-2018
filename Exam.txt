@@ -3,7 +3,7 @@ Q1:															(1)
 	and in case radio button is checking the background of the form  will change to blue color 
 	in otherwise the back ground will be green.
  
-2)array2 will be equal to {5,4,3,2,1}
+2)array2 will be equal to {20,16,12,8,4} with reverse sort.
  
 3)in first loop the program will print the exist value of the 'i' and 'sum' which will be like "i=1,sum=1"
 	then the program will increase the 'i' value in every once by 2*value - i*2 - 
