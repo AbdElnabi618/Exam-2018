@@ -16,7 +16,7 @@ Q1:															(1)
 		description like "The total amount is:55.6".
 	
    															(2)
-1)TextBox textBoxArray = new TextBox[5];
+1)TextBox[] textBoxArray = new TextBox[5];
 
 2)bool xIsOdd = x%2==0 ? false :true ; 
 
